@@ -7,15 +7,26 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HomeComponent } from './views/home/home.component';
+import { AboutComponent } from './views/about/about.component';
+import { SkillsComponent } from './views/skills/skills.component';
+import { WorksComponent } from './views/works/works.component';
 
 const routes: Routes = [
   { 
-    path: 'menu', 
-    component: MenuComponent 
-  },
-  { 
     path: 'home', 
     component: HomeComponent 
+  },
+  { 
+    path: 'about', 
+    component: AboutComponent 
+  },
+  { 
+    path: 'skills', 
+    component: SkillsComponent 
+  },
+  { 
+    path: 'works', 
+    component: WorksComponent 
   },
   { path: '',
     redirectTo: '/home',
@@ -31,7 +42,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    SkillsComponent,
+    WorksComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
