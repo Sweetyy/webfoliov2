@@ -17,6 +17,12 @@ body {
   100% {opacity: 1}
 }
 
+hr {
+  border: none;
+  background: #dbdbdb;
+  height: 1px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -24,12 +30,13 @@ header {
   justify-content: center;
   background: #42b983;
   padding: 40px 0;
+  padding-top: 30px;
 }
 
 section {
   animation: fadein 1s;
-  max-width: 920px;
-  padding: 10px;
+  padding: 30px;
+  padding-top: 20px;
   margin: 0 auto;
 }
 
@@ -37,7 +44,7 @@ h1, h2, h3 {
   font-weight: normal;
   color: #42b983;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
 }
 
 h1 {
@@ -161,6 +168,6 @@ p, ul, li {
 
 .logo {
   display: block;
-  max-width: 280px;
+  max-width: 260px;
   width: 100%;
 }
