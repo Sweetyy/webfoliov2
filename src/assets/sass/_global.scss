@@ -38,6 +38,11 @@ section {
   padding: 30px;
   padding-top: 20px;
   margin: 0 auto;
+  margin-bottom: 40px;
+  
+  @media screen and (max-width: $break-small) {
+    padding: 10px;
+  }
 }
 
 h1, h2, h3 {
