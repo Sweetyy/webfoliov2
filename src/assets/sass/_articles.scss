@@ -4,8 +4,15 @@ div.skills {
     justify-content: center;
 
     article {
-        max-width: 400px;
+        max-width: 380px;
         width: 100%;
+
+        &.box-over {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+            padding: 20px;
+            margin: 10px;
+        }
     
         .article-content {
     
@@ -13,13 +20,6 @@ div.skills {
             flex-flow: row wrap;
             align-items: center;
             justify-content: center;
-            margin: 10px;
-
-            &.box-over {
-                background: #fff;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
-                padding: 20px;
-            }
 
             h3 {
                 color: #2c3e50;
@@ -39,11 +39,18 @@ div.skills {
             img {
                 width: 120px;
             }
+
+            span[class^="icon-"] {
+                font-size: 120px;
+            }
     
             .article-description {
                 width: 300px;
                 margin: 10px;
                 flex-grow: 1;
+                @media screen and (max-width: $break-small) {
+                    margin: 0;
+                }
             }
         }
 
@@ -54,6 +61,7 @@ div.skills {
 }
 
 div.works {
+
     article {
         max-width: 600px;
         margin: 40px auto;

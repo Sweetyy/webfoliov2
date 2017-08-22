@@ -3,13 +3,24 @@
   <h2>Skills, competences & more</h2>
 
   <div class="skills" >
-    <article *ngFor="let skill of skills; let index = index" [class.last]="index == 5">
-      <div class="article-content box-over">
+    <article *ngFor="let skill of skills" class="box-over">
+      <div class="article-content">
         <img src="../assets/images/{{skill.images}}">
         <div class="article-description">
           <h3>{{skill.name}}</h3>
           <p>
             {{skill.description}}
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="box-over">
+      <div class="article-content">
+        <div class="article-description">
+          <span class="icon-plus-circled"></span>
+          <h3>Need more!</h3>
+          <p>
+            Help me to add more skills by working with you!
           </p>
         </div>
       </div>
