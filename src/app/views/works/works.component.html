@@ -3,11 +3,11 @@
   <h2>Take a look at my works</h2>
 
   <div class="works" *ngFor="let work of works; let index = index">
-    <article [class.last]="index == 5">
+    <article [class.last]="index == 2">
       <div class="article-content">
         <img src="../assets/images/{{work.images}}">
         <div class="box-over article-description">
-          <h3>{{work.name}}</h3>
+          <a target="_blank" href="{{work.link}}">{{work.name}}</a>
           <p>
             {{work.description}}
           </p>

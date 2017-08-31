@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-works',
@@ -7,14 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class WorksComponent implements OnInit {
 
   works: any[];
-  constructor() {
+  constructor(private router:Router) {
     this.works=[
-      {name: 'Angular 2', images: 'angular_shadow.png', description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'},
-      {name: 'CSS3', images: 'css3_shadow.png', description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'},
-      {name: 'HTML5', images: 'html5_shadow.png', description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'},
-      {name: 'Responsive web design', images: 'responsive_shadow.png', description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'},
-      {name: 'Javascript', images: 'js_shadow.png', description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'},
-      {name: 'Git', images: 'git_shadow.png', description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'}
+      {
+        name: 'Dailyrious', 
+        images: 'dailyrious.png', 
+        link: 'http://dailyrious.net', 
+        description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'
+      },
+      {
+        name: 'Foodtrack', 
+        images: 'foodtrack.png', 
+        link: 'https://play.google.com/store/apps/details?id=com.ionicframework.final994902', 
+        description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'
+      },
+      {
+        name: 'Just Square', 
+        images: 'justsquare.png', 
+        link: '', 
+        description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.'
+      },
     ]
   }
 
