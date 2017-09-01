@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -7,9 +7,19 @@ import {Router} from "@angular/router";
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  private active:boolean;
+  @Output() open = new EventEmitter();
+
+  constructor(private router:Router) { 
+    this.active = false;
+  }
 
   ngOnInit() {
+  }
+
+  showMenu():void {
+    this.active = !this.active;
+    this.open.emit(this.active);
   }
 
 }

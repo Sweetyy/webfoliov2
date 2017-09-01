@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
+
+  private active: boolean;
+  constructor() {
+    this.active = false;
+  }
 }

@@ -32,6 +32,32 @@ header {
   background: #42b983;
   padding: 40px 0;
   padding-top: 30px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  @media screen and (max-width: $break-small) {
+      padding: 0;
+      height: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+  }
+
+  .logo {
+
+    display: block;
+    max-width: 260px;
+    width: 100%;
+    @media screen and (max-width: $break-small) {
+        height: 48px;
+        width: auto;
+        max-width: initial;
+    }
+  }
+
+  
 }
 
 section {
@@ -43,6 +69,7 @@ section {
   
   @media screen and (max-width: $break-small) {
     padding: 10px;
+    padding-top: 60px;
   }
 }
 
@@ -170,10 +197,4 @@ p, ul, li {
 
 .flex-between {
   justify-content: space-between;
-}
-
-.logo {
-  display: block;
-  max-width: 260px;
-  width: 100%;
 }
