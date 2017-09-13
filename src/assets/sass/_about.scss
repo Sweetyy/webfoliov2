@@ -28,12 +28,13 @@ div.experiences {
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
                 padding: 20px;
                 margin: 10px;
+                border-left-style: solid;
+                border-left-width: 8px;
             }
 
             h3 {
                 color: #2c3e50;
-                margin-top: 0;
-                margin-bottom: 20px;
+                margin: 0;
                 text-align: left;
             }
 
@@ -43,6 +44,23 @@ div.experiences {
                 line-height: 24px;
                 font-weight: 400;
                 text-align: left;
+
+                &.contract {
+                    line-height: 16px;
+                    font-size: 0.8em;
+                    opacity: 0.9;
+                }
+
+                &.date {
+                    line-height: 16px;
+                    font-size: 0.68em;
+                    opacity: 0.8;
+                }
+
+                &.description {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
             }
 
             ul {

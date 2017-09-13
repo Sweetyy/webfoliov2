@@ -10,39 +10,47 @@ export class AboutComponent implements OnInit {
   constructor() {
     this.experiences=[
       {
-        name: 'Developer Front-End', 
-        date: '2014 - Now', 
-        description: 'Angular is a free and open-source Javascript structural framework for dynamic web apps. Developped by Google, it lets you use HTML as your template language and lets you extend HTML\'s syntax to express your application\'s components clearly and succinctly.',
+        name: 'Front-End developer',
+        contract: 'Open-ended contracts - Safety Line', 
+        date: 'Paris, from June 15 2014 to now.', 
+        description: 'Impletations of templates & mockups for Web applications in a team of developers with Angular 2+, Ionic 3, Bootstrap, SASS...',
         bcolor: 'lightseagreen',
         tasks: [
           {
-            description: 'Design'
+            label: 'Web development mostly with Angular 2+ & Bootstrap'
           },
           {
-            description: 'Coding'
+            label: 'Implementation of forms in HTML/CSS/Javascript'
           }
         ]
       },
       {
-        name: 'Student',
-        date: '2009 - 2014',
-        description: 'Angular is a free and open-source Javascript structural framework for dynamic web apps.',
-        bcolor: 'siver',
+        name: 'Webdesign & infographics',
+        contract: 'Traineeship - CTAI pôle d’innovation TIC et multimédia',
+        date: 'Alsace (France), from April 2 to June 8, 2013.',
+        description: 'Design and production of multimedia products.',
+        bcolor: 'indianred',
         tasks: [
           {
-            description: 'Learning'
+            label: 'Creation of mockups with Photoshop'
           },
           {
-            description: 'Homework'
-          },
-          {
-            description: 'Cinema'
-          },
-          {
-            description: 'Friend'
+            label: 'Static implementations of mockups in HTML/CSS'
           }
         ]
-      },      
+      },
+      {
+        name: 'Webdesign',
+        contract: 'Traineeship - Anna Conseil en Communication',
+        date: 'Alsace (France), from June 14 to June 28, 2012.',
+        description: 'Photo editing and update of the newsletters.',
+        bcolor: 'gold',
+        tasks: [
+          {
+            label: 'Learning'
+          }
+        ]
+      },
     ]
   }
 
