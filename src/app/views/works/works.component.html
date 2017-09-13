@@ -8,9 +8,8 @@
         <img src="../assets/images/{{work.images}}">
         <div class="box-over article-description">
           <a target="_blank" href="{{work.link}}">{{work.name}}</a>
-          <p>
-            {{work.description}}
-          </p>
+          <p>{{work.description}}</p>
+          <p [innerHtml]="work.technologies"></p>
         </div>
       </div>
     </article>

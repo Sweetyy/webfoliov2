@@ -1,0 +1,80 @@
+div.experiences {
+    display: table;
+    margin: 0 auto;
+
+    .row {
+        display: table-row;
+
+        &:nth-child(odd) {
+            .historic-arrow {
+                background: rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+
+    &>.row>div {
+        display: table-cell;
+    }
+
+    .articles-content {
+
+        padding-right: 20px;
+        
+        article {
+            max-width: 600px;
+    
+            &.box-over {
+                background: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h3 {
+                color: #2c3e50;
+                margin-top: 0;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            p, li {
+                letter-spacing: .3px;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                text-align: left;
+            }
+
+            ul {
+                padding-left: 20px;
+
+                li {
+                    list-style-type: circle;
+                }
+            }
+        }
+    }
+
+    .historic-arrow {
+        position: relative;
+        width: 4px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    &>.row:first-child>div.articles-content>article {
+        margin-top: 0;
+    }
+
+    &>.row:first-child>div.historic-arrow:before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        top: -2px;
+        left: -4px;
+    }
+}

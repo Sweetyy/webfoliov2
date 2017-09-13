@@ -1,3 +1,17 @@
 <section>
-  <h2>Who i am</h2>
+  <h2>About me</h2>
+  <div class="experiences">
+    <div class="row" *ngFor="let experience of experiences">
+      <div class="articles-content">
+        <article class="box-over">
+          <h3>{{experience.name}} / {{experience.date}}</h3>
+          <p>{{experience.description}}</p>
+          <ul>
+            <li *ngFor="let task of experience.tasks">{{task.description}}</li>
+          </ul>
+        </article>
+      </div>
+      <div class="historic-arrow" [ngStyle]="{'background': experience.bcolor}"></div>
+    </div>
+  </div>
 </section>
