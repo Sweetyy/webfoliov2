@@ -8,7 +8,7 @@
           <p class="contract">{{experience.contract}}</p>
           <p class="date">{{experience.date}}</p>
           <p class="description">{{experience.description}}</p>
-          <ul>
+          <ul class="tasks" *ngIf="experience.tasks.length > 0">
             <li *ngFor="let task of experience.tasks">{{task.label}}</li>
           </ul>
         </article>

@@ -55,15 +55,12 @@ div.experiences {
                     line-height: 16px;
                     font-size: 0.68em;
                     opacity: 0.8;
-                }
-
-                &.description {
-                    margin-top: 15px;
                     margin-bottom: 15px;
                 }
             }
 
-            ul {
+            ul.tasks {
+                margin-top: 15px;
                 padding-left: 20px;
 
                 li {

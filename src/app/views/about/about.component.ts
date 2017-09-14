@@ -45,11 +45,7 @@ export class AboutComponent implements OnInit {
         date: 'Alsace (France), from June 14 to June 28, 2012.',
         description: 'Photo editing and update of the newsletters.',
         bcolor: 'gold',
-        tasks: [
-          {
-            label: 'Learning'
-          }
-        ]
+        tasks: []
       },
     ]
   }
