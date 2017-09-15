@@ -11,6 +11,9 @@
           <ul class="tasks" *ngIf="experience.tasks.length > 0">
             <li *ngFor="let task of experience.tasks">{{task.label}}</li>
           </ul>
+          <ul class="skills" *ngIf="experience.skills.length > 0">
+            <li *ngFor="let skill of experience.skills">{{skill.label}}</li>
+          </ul>
         </article>
       </div>
       <div class="historic-arrow" [ngStyle]="{'background': experience.bcolor}"></div>

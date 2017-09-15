@@ -22,6 +22,32 @@ export class AboutComponent implements OnInit {
           {
             label: 'Implementation of forms in HTML/CSS/Javascript'
           }
+        ],
+        skills: [
+          {
+            label: 'Angular 2+'
+          },
+          {
+            label: 'Ionic 3'
+          },
+          {
+            label: 'Javascript/JQuery'
+          },
+          {
+            label: 'SASS'
+          },
+          {
+            label: 'Bootstrap'
+          },
+          {
+            label: 'HTML'
+          },
+          {
+            label: 'CSS'
+          },
+          {
+            label: 'Photoshop'
+          }
         ]
       },
       {
@@ -37,6 +63,20 @@ export class AboutComponent implements OnInit {
           {
             label: 'Static implementations of mockups in HTML/CSS'
           }
+        ],
+        skills: [
+          {
+            label: 'Javascript/JQuery'
+          },
+          {
+            label: 'HTML'
+          },
+          {
+            label: 'CSS'
+          },
+          {
+            label: 'Photoshop'
+          }
         ]
       },
       {
@@ -45,12 +85,22 @@ export class AboutComponent implements OnInit {
         date: 'Alsace (France), from June 14 to June 28, 2012.',
         description: 'Photo editing and update of the newsletters.',
         bcolor: 'gold',
-        tasks: []
-      },
+        tasks: [],
+        skills: [
+          {
+            label: 'HTML'
+          },
+          {
+            label: 'CSS'
+          },
+          {
+            label: 'Photoshop'
+          }
+        ]
+      }
     ]
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
