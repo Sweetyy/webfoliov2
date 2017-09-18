@@ -10,6 +10,7 @@ import { HomeComponent } from './views/home/home.component';
 import { AboutComponent } from './views/about/about.component';
 import { SkillsComponent } from './views/skills/skills.component';
 import { WorksComponent } from './views/works/works.component';
+import { ContactComponent } from './views/contact/contact.component';
 
 const routes: Routes = [
   { 
@@ -28,13 +29,17 @@ const routes: Routes = [
     path: 'works', 
     component: WorksComponent 
   },
+  { 
+    path: 'contact', 
+    component: ContactComponent 
+  },
   { path: '',
-    redirectTo: '/home',
+    redirectTo: '/skills',
     pathMatch: 'full'
   },
   { 
     path: '**', 
-    redirectTo: '/home',
+    redirectTo: '/skills',
   }
 ];
 
@@ -45,7 +50,8 @@ const routes: Routes = [
     HomeComponent,
     AboutComponent,
     SkillsComponent,
-    WorksComponent
+    WorksComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
