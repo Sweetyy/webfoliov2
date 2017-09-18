@@ -35,7 +35,7 @@ export class WorksComponent implements OnInit {
         name: 'Just Square', 
         images: 'justsquare.png', 
         link: '',
-        description: 'Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. Realized with some friends.',
+        description: 'Just Square is an HTML5 based experience working with Socket.io and BabylonJS. It\'s an FPS WEBGL game that you can play directly in the browser. Once you choosed a username, you can join a room to play with others players or create your own to start your game whenever you want.',
         technologies: '<b>Socket, BabylonJS, HTML, CSS</b>'
       }
     ]

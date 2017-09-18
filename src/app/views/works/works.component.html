@@ -5,7 +5,7 @@
   <div class="works" *ngFor="let work of works; let index = index">
     <article [class.last]="index == 3">
       <div class="article-content">
-        <img src="../assets/images/{{work.images}}">
+        <img [src]="work.images != '' ? '../assets/images/' + work.images : ''">
         <div class="box-over article-description">
           <a target="_blank" href="{{work.link}}">{{work.name}}</a>
           <p>{{work.description}}</p>
