@@ -12,6 +12,12 @@ div.skills {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
             padding: 20px;
             margin: 10px;
+
+            &:hover {
+                span[class^="icon-"] {
+                    color: #929292;
+                }
+            }
         }
     
         .article-content {
@@ -41,8 +47,13 @@ div.skills {
             }
 
             span[class^="icon-"] {
+                /*text-shadow: 0px 2px 4px rgba(0,0,0,0.8);*/
                 font-size: 120px;
-				text-shadow: 0px 2px 4px rgba(0,0,0,0.8);
+                text-shadow: none;
+                border: 0;
+                outline: 0;
+                color: #afafaf;
+                transition: color 0.35s;
             }
     
             .article-description {

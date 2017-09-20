@@ -181,12 +181,15 @@ p, ul, li {
 .form-heroe:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: darkgray;
 }
+
 .form-heroe:focus::-moz-placeholder { /* Firefox 19+ */
   color: darkgray;
 }
+
 .form-heroe:focus:-ms-input-placeholder { /* IE 10+ */
   color: darkgray;
 }
+
 .form-heroe:focus:-moz-placeholder { /* Firefox 18- */
   color: darkgray;
 }
