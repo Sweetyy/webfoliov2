@@ -25,11 +25,19 @@ div.experiences {
     
             &.box-over {
                 background: #fff;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+                //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+                box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
                 padding: 20px;
                 margin: 10px;
                 border-left-style: solid;
                 border-left-width: 8px;
+                border-radius: 4px;
+                transition: box-shadow .28s;
+
+                &.link:hover {
+                    box-shadow: 0 6px 6px rgba(10,16,20,.24), 0 0 6px rgba(10,16,20,.12);
+                }
+    
             }
 
             h3 {
