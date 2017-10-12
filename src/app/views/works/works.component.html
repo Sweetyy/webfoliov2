@@ -2,12 +2,12 @@
 
   <h2>Take a look at my works</h2>
 
-  <div class="works" *ngFor="let work of works; let index = index">
+  <div class="works" *ngFor="let work of works; let index = index" [ngClass]="work.inprogress ? 'inprogress' : ''">
     <article [class.last]="index == 3">
       <div class="article-content">
         <img [src]="work.images != '' ? '../assets/images/' + work.images : ''">
         <div class="box-over article-description">
-          <a target="_blank" href="{{work.link}}">{{work.name}}</a>
+          <a target="_blank" href="{{work.link}}">{{work.name}} <span *ngIf="work.inprogress" class="inprogress">(in progress)</span></a>
           <p>{{work.description}}</p>
           <p [innerHtml]="work.technologies"></p>
         </div>
